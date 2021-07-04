@@ -1,7 +1,18 @@
-# tracerPy
+# Tracer Bullet FrontEnd
 
-A tracer bullet for deploying a full stack web app via Terraform using React and Python with Graphene
+## Deployment
+
+Firebase with codemagic
+
+## Development
+
+Flutter
 
 ## Setup
 
-In this repo's root directory, run `ln ~/.aws/credentials aws_credentials`
+### Firebase
+
+docker run -it -p 9005:9005 -v /Users/erikosmond/Documents/tracerPy/bullet_frontend:/home/node frontEndContainerId /bin/sh
+firebase login
+update localhost to 0.0.0.0 if needed
+for flutter use build/web as the public directory
